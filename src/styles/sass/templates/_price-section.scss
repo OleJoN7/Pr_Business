@@ -1,0 +1,97 @@
+.price-section {
+  background: #e7edf3;
+  .price-header {
+    padding-top: 135px;
+    p {
+      @include font(1.125rem, "LatoR");
+      color: #75888d;
+    }
+  }
+
+  .active-price {
+    @include transition(.5s ease-in-out);
+    border: 1px solid transparent;
+    position: relative;
+    h3, p {
+      color: #fff !important;
+      @include transition(.5s ease-in-out);
+      position: relative;
+      z-index: 10;
+    }
+    &:before { // Bторой вариант - при scale родителя,текст внутри child не тянется!
+      display: block;
+      content: "";
+      position: absolute;
+      z-index: 1;
+      top: 0;
+      right: 0;
+      left: 0;
+      bottom: 0;
+      background: #709dca;
+      border: none;
+      @include animation(hover 0.5s both);
+      @keyframes hover {
+        from {
+          @include transform(scaleY(1));
+          opacity: 0
+        }
+        to {
+          @include transform(scaleY(1.1));
+          opacity: 1
+        }
+      }
+    }
+  }
+}
+
+.price-wrap {
+  overflow: hidden;
+  padding: 80px 0 190px;
+  > div {
+    float: left;
+    width: calc(100% / 3);
+    background: #fff;
+    border: 1px solid #ccd5df;
+    padding: 50px 0 45px;
+    @include transition(.5s ease-in-out);
+    h3 {
+      @include font(1.565rem, "LatoR");
+      text-transform: uppercase;
+      color: #818b95;
+      padding-bottom: 30px;
+      @include transition(.5s ease-in-out);
+    }
+  }
+}
+
+.price-block {
+  padding-bottom: 35px;
+
+  p:first-child {
+    color: #ffbb42;
+    @include font(3.75rem, "LatoB");
+    @include transition(.5s ease-in-out);
+  }
+  p:last-child {
+    color: #818b95;
+    @include font(1.25rem, "LatoR");
+    @include transition(.5s ease-in-out);
+  }
+}
+
+.price-info-block {
+  padding-bottom: 35px;
+  p {
+    @include font(.875rem, "LatoR");
+    color: #818b95;
+    border-top: 1px solid #e2e9f0;
+    padding: 15px 0;
+    margin: 0 30px;
+    @include transition(.5s ease-in-out);
+  }
+}
+
+
+
+
+

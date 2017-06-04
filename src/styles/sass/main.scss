@@ -1,0 +1,34 @@
+@import 'compass';
+@import "compass/css3";
+
+@include font-face("Gotham", font-files("gotham/gotham-black.ttf"));
+@include font-face("LatoR", font-files("lato/lato-regular.ttf"));
+@include font-face("LatoB", font-files("lato/lato-bold.ttf"));
+@include font-face("OpensansBold", font-files("opensans/OpenSans-Bold.ttf"));
+@include font-face("OpensansRegular", font-files("opensans/OpenSans-Regular.ttf"));
+@include font-face("OpensansLight", font-files("opensans/OpenSans-Light.ttf"));
+
+
+@import "variables";
+@import "mixin";
+
+@import "base/reset";
+
+@import "templates/buttons";
+@import "templates/header";
+@import "templates/welcome-section";
+@import "templates/our-services-section";
+@import "templates/about-section";
+@import "templates/price-section";
+@import "templates/works-section";
+@import "templates/clients-section";
+@import "templates/subscribe-section";
+@import "templates/footer";
+@import "templates/mediaL";
+@import "templates/mediaM";
+@import "templates/mediaS";
+@import "templates/mediaXS";
+
+
+
+

@@ -1,0 +1,110 @@
+@media (min-width:768px) and (max-width:991px) {
+  .main-header {
+    padding: 20px 0;
+  }
+  .main-header .nav-list {
+    padding-top: 5px;
+  }
+  .main-header .nav-list a {
+    font: 0.7rem "LatoR", sans-serif;
+    padding: 0 10px;
+    line-height: 38px;
+  }
+  .welcome-section {
+    padding: 70px 0 335px;
+  }
+  .welcome-section p {
+    font: .9rem "OpensansRegular", sans-serif;
+  }
+
+  .welcome-section .input-field {
+    min-width: 200px;
+    margin-bottom: 15px;
+  }
+
+  //--------------------------------
+
+  .services-list {
+    padding: 0 0 50px 40px;
+  }
+  //----------------------------------
+
+  .about-section .text-block-wrap .text-block {
+    padding: 60px 0 60px 35px;
+  }
+  .about-section .text-block-wrap p {
+    padding: 0 40px 35px 0;
+  }
+
+  //--------------------------------
+
+  .step-list .down-arrow:before {
+    right: -37%;
+  }
+  .step-list .up-arrow:before {
+    right: -37%;
+  }
+  .step-list li {
+    padding: 0 15px;
+  }
+  .step-list li p {
+    padding-bottom: 40px;
+  }
+  .butn-start-now {
+    margin-bottom: 45px;
+  }
+
+  //------------------------------------
+
+  .clients-header {
+    padding: 60px 0 60px;
+  }
+  .clients-list li {
+    padding: 20px 20px 20px 15px;
+    margin-bottom: 20px;
+  }
+  .clients-list li .clients-img-wrap {
+    flex-basis: 140%;
+  }
+  .clients-list li .clients-comments p:first-child {
+    font: 0.6rem "OpensansRegular", sans-serif;
+  }
+  .clients-list li .clients-comments p:last-child {
+    font: 0.6rem "LatoR", sans-serif;
+  }
+  .subscribe-form .user-form {
+    min-width: 200px;
+    margin-bottom: 15px;
+  }
+
+  //------------------------------------------
+
+  .location-block .address-block {
+    height: 150px;
+    width: 150px;
+    padding-top: 20px;
+  }
+  .location-block .address-block p:first-child {
+    font: 0.65rem "LatoB", sans-serif;
+    padding-bottom: 10px;
+  }
+  .location-block .address-block p:nth-child(n+2) {
+    font: 0.65rem "OpensansRegular", sans-serif;
+    line-height: 15px;
+  }
+  .location-block .address-block .email-address {
+    font: 0.65rem "OpensansRegular", sans-serif;
+  }
+  .location-block {
+    padding-bottom: 145px;
+  }
+
+  //----------------------------
+
+  .footer-nav-list li {
+    margin: 0 5px;
+  }
+  .footer-nav-list li a {
+    font: 0.7rem "LatoR", sans-serif;
+  }
+}

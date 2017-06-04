@@ -1,0 +1,80 @@
+.welcome-section {
+  background: #709dca;
+  padding: 100px 0 335px;
+  color: $primary-color;
+  position: relative;
+  h1 {
+    @include font(2.188rem, "Gotham");
+    text-transform: uppercase;
+    padding-bottom: 10px;
+  }
+  p {
+    padding-bottom: 30px;
+    @include font(1rem, "OpensansRegular");
+  }
+  .input-field {
+    margin: 0 5px;
+    padding: 15px 0 15px 40px;
+    min-width: 260px;
+    border: none;
+    position: relative;
+    @include border-radius(2px);
+  }
+  input[placeholder] {
+    color: #a9a9a9;
+    @include font(.81rem, "OpensansRegular");
+  }
+  .user-field {
+    background: #fff url('../../images/user-form-bg.png') 5% 50% no-repeat;
+  }
+  .email-field {
+    background: #fff url('../../images/email-form-bg.png') 5% 50% no-repeat;
+  }
+  .phone-field {
+    background: #fff url('../../images/phone-form-bg.png') 5% 50% no-repeat;
+  }
+  .slider-block {
+    position: absolute;
+    z-index: 10;
+    background: transparent url('../../images/slider-bg.png') 50% no-repeat;
+    left: 50%;
+    @include transform(translate(-50%, 20%));
+    height: 344px;
+    width: 648px;
+    max-width: 100%;
+    .img-wrap {
+      width: 445px;
+      position: absolute;
+      left: 16%;
+      top: 5.5%;
+    }
+    .photo-2, .photo-3 {
+      display: none;
+    }
+    .dots-list {
+      position: absolute;
+      bottom: -10%;
+      left: 50%;
+      @include transform(translateX(-50%));
+      overflow: hidden;
+      .item {
+        width: 15px;
+        height: 15px;
+        border: 3px solid #dedfe0;
+        @include border-radius(50%);
+        margin-right: 5px;
+        float: left;
+        .slider-btn {
+          width: 15px;
+          height: 15px;
+          background: transparent;
+          border: none;
+        }
+      }
+    }
+  }
+}
+
+.active-dot {
+  border: 3px solid #1ca8dd !important;
+}

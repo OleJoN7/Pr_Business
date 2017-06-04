@@ -1,0 +1,26 @@
+.about-section {
+  @include display-flex();
+  > div {
+    width: calc(100% / 2);
+  }
+  .bg-block {
+    @include background-mix(url('../../images/about-bg.jpg'), cover);
+  }
+  .text-block-wrap {
+    background: #ffc155;
+    .text-block {
+      padding: 160px 0 170px 75px;
+    }
+    h2 {
+      color: #fff;
+    }
+    p {
+      display: block;
+      color: #fff;
+      @include font(.815rem, "OpensansRegular");
+      padding: 0 100px 35px 0;
+      text-align: left;
+      line-height: 24px;
+    }
+  }
+}

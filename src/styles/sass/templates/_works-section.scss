@@ -1,0 +1,51 @@
+.works-header {
+  padding: 150px 0 80px;
+  p {
+    color: $most-color;
+    @include font(1.125rem, "LatoR");
+  }
+}
+
+.step-list {
+  @include display-flex();
+  @include justify-content(space-between);
+  li {
+    padding: 0 30px;
+    position: relative;
+    i {
+      padding-bottom: 100px;
+      color: #729ecb;;
+    }
+    p {
+      @include font(.815rem, "OpensansRegular");
+      color: #7b7b7b;
+      line-height: 22px;
+      padding-bottom: 90px;
+    }
+    .step {
+      color: #394b50;
+      @include font(1.25rem, "LatoB");
+      padding-bottom: 30px;
+    }
+  }
+  .down-arrow:before {
+    display: block;
+    content: '';
+    width: 128px;
+    height: 32px;
+    position: absolute;
+    top: -5%;
+    right: -25%;
+    background: url('../../images/down.png') 50% no-repeat;
+  }
+  .up-arrow:before {
+    display: block;
+    content: '';
+    width: 128px;
+    height: 32px;
+    position: absolute;
+    top: 15%;
+    right: -25%;
+    background: url('../../images/up.png') 50% no-repeat;
+  }
+}

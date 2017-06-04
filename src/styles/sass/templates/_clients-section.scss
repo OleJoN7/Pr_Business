@@ -1,0 +1,59 @@
+.clients-section {
+  background: #ffc155;
+}
+
+.clients-header {
+  padding: 140px 0 60px;
+  h2 {
+    color: $primary-color;
+  }
+  p {
+    color: $primary-color;
+    @include font(1rem, "OpensansRegular");
+  }
+}
+
+.clients-list {
+  @include display-flex();
+  @include flex-wrap(wrap);
+  @include justify-content(space-between);
+  padding-bottom: 140px;
+  li {
+    background: #fff;
+    width: 48%;
+    @include display-flex();
+    padding: 35px 40px 40px 30px;
+    margin-bottom: 20px;
+    .clients-img-wrap {
+      flex-basis: 100%;
+      padding-right: 25px;
+    }
+    .clients-comments {
+      text-align: left;
+      p:first-child {
+        @include font(.815rem, "OpensansRegular");
+        color: #7b7b7b;
+        padding-bottom: 30px;
+        position: relative;
+        i:first-child {
+          position: absolute;
+          top: 0;
+          left: -5%;
+        }
+        i:last-child {
+          position: absolute;
+          bottom: 25%;
+          right: 40%;
+        }
+      }
+      p:last-child {
+        color: #99a9ae;
+        @include font(.875rem, "LatoR");
+        text-transform: uppercase;
+        span {
+          color: #f6772c;
+        }
+      }
+    }
+  }
+}
